@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 10deg 79% 65%;
+    --color-secondary: 186deg 34% 60%;
+    --color-brown-dark: 25deg 47% 15%;
+    --color-brown-medium: 28deg 10% 53%;
+    --color-cream: 27deg 66% 92%;
+    --color-orange-pale: 33deg 100% 98%;
+  }
+
+  body {
+    @apply min-h-full overflow-x-hidden bg-cream text-lg;
+  }
+}
+
+@layer components {
+}
