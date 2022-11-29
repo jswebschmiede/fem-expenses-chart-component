@@ -11,7 +11,7 @@ const Header = (props: Props) => {
           ${921.48}
         </span>
       </div>
-      <img src={Logo} alt="Logo" />
+      <img src={Logo} alt="Logo" width={72} height={48} />
     </header>
   );
 };
