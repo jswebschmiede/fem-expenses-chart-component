@@ -75,7 +75,16 @@ const ChartContainer = () => {
       {
         data: chartData?.map((value) => value.amount) || [],
         borderWidth: 0,
-        backgroundColor: "hsl(10, 79%, 65%)",
+        backgroundColor: (color: any): string => {
+          const amount = chartData?.map((value) => value.amount);
+          const found = chartData?.find(
+            (value) => value.amount === Math.max(...(amount as []))
+          );
+          const idx = amount?.findIndex((value) => value === found?.amount);
+          return color.index === idx
+            ? "hsl(186, 34%, 60%)"
+            : "hsl(10, 79%, 65%)";
+        },
         hoverBackgroundColor: "hsl(186, 34%, 60%)",
         borderRadius: 5,
         borderSkipped: true,
