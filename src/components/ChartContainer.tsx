@@ -7,7 +7,7 @@ import {
   Tooltip,
   ChartOptions,
 } from "chart.js";
-import { Bar } from "react-chartjs-2";
+import { Chart } from "react-chartjs-2";
 import { Data } from "../typings";
 import { fetchData } from "../utils/fetch";
 
@@ -23,14 +23,16 @@ const ChartContainer = () => {
       axis: "x",
     },
     scales: {
-      y: {
-        display: false,
+      x: {
+        border: {
+          display: false,
+        },
         grid: {
           display: false,
         },
       },
-      x: {
-        display: true,
+      y: {
+        display: false,
         border: {
           display: false,
         },
@@ -116,7 +118,7 @@ const ChartContainer = () => {
           </svg>
         </span>
       ) : (
-        <Bar options={chartOptions} data={chartDataSet} />
+        <Chart type="bar" options={chartOptions} data={chartDataSet} />
       )}
 
       <footer className="mt-8 flex justify-between border-t-2 border-cream pt-8">
