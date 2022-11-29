@@ -1,10 +1,10 @@
-# Frontend Mentor - Tip calculator app solution
+# Frontend Mentor - Expenses chart component
 
-This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [Frontend Mentor - Tip calculator app solution](#frontend-mentor---tip-calculator-app-solution)
+- [Frontend Mentor - Expenses chart component](#frontend-mentor---expenses-chart-component)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
