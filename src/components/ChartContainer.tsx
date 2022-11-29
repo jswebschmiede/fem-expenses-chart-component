@@ -5,6 +5,7 @@ import {
   LinearScale,
   BarElement,
   Tooltip,
+  ChartOptions,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { Data } from "../typings";
@@ -15,7 +16,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 const ChartContainer = () => {
   const [chartData, setChartData] = useState<Data[] | undefined>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const chartOptions = {
+  const chartOptions: ChartOptions = {
     responsive: true,
     interaction: {
       mode: "nearest",
