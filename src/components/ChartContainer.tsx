@@ -1,17 +1,10 @@
 import { useEffect, useState } from "react";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Tooltip,
-  ChartOptions,
-} from "chart.js";
+import { Chart as ChartJS, registerables, ChartOptions } from "chart.js";
 import { Chart } from "react-chartjs-2";
 import { Data } from "../typings";
 import { fetchData } from "../utils/fetch";
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
+ChartJS.register(...registerables);
 
 const ChartContainer = () => {
   const [chartData, setChartData] = useState<Data[] | undefined>([]);
