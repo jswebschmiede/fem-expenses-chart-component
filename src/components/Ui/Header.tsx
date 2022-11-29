@@ -4,7 +4,7 @@ interface Props {}
 
 const Header = (props: Props) => {
   return (
-    <header className="mb-4 flex w-full justify-between rounded-xl bg-primary p-5 shadow">
+    <header className="mb-4 flex w-full items-center justify-between rounded-xl bg-primary p-5 shadow">
       <div className="text-white">
         <span className="mb-2 block text-sm">My balance</span>
         <span className="block text-2xl font-bold tracking-wide">
