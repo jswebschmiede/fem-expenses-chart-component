@@ -3,7 +3,7 @@ export const fetchData = async () => {
 
   try {
     await delay(2000);
-    const res = await fetch("/data.json");
+    const res = await fetch("data/data.json");
     const jsonData = await res.json();
     return jsonData;
   } catch (err) {
