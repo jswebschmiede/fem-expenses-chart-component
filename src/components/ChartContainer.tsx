@@ -35,6 +35,9 @@ const ChartContainer = () => {
       },
     },
     plugins: {
+      legend: {
+        display: false,
+      },
       tooltip: {
         xAlign: "center",
         yAlign: "bottom",
